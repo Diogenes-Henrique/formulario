@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome"> Nome:</label>
+            <input type="text" name="name" id="nome" value>
+        <label for="email"> Email: </label>
+            <input type="email" name="email" id="email" value>
+        <label for="telefone"> Telefone: </label>
+            <input type="tel" name="telefone" id="telefone">
+
+        <select name="nationality" id="nationality">
+            <option value="selecione"> Selecione </option>
+            <option value="rh"> Recursos Humanos </option>
+            <option value="finaceiro"> Financeiro </option>
+            <option value="gestão"> Gestão </option>
+            <option value="comercial"> Comercial </option>
+        </select>
+        
+        <fieldset>
+            <legend> Disponibilidade: </legend>
+            <label for="integral"> Integral "8h" </label> 
+                <input type="checkbox" name="disponivel" id="integral">
+            <label for="meio"> Meio periodo "4h" </label> 
+                <input type="checkbox" name="disponivel" id="meio">
+            <label for="free"> Freelancer </label> 
+                <input type="checkbox" name="disponivel" id="free">
+        </fieldset>
+
+        <p> Qual a melhor forma de entrarmos em contato com você? </p>
+            <input type="radio" name="entrar-contato" id="email" value="email">
+                <label for="email"> Email</label>
+            <input type="radio" id="telefone" name="entrar-contato" value="tel">
+                <label for="telefone"> Telefone</label>
+            <input type="radio" id="whats" name="entrar-contato" value="wpp">
+                <label for="whats"> WhatsApp</label>
+        
+            <label for="files"> Currículo: </label>
+                <input type="file" id="file" required>
+            <br>
+            <textarea id="motivations" name="motivations" height="78px" width="536.64px" placeholder="Por que você gostaria de ser um astronauta?">
+            </textarea>
+
+        <button type="submit"> Enviar </button>
+
+    </form>
+</body>
+</html>
